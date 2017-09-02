@@ -16,7 +16,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.9.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.0">
     
     
       
@@ -27,9 +27,9 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-0a3554af36.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-b6a6d08807.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -43,7 +43,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../extra-e5d0f8ebfa.css">
+      <link rel="stylesheet" href="../../extra-21c736e569.css">
     
     
   </head>
@@ -69,10 +69,13 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="https://facelessuser.github.io/pymdown-extensions" title="PyMdown Extensions Documentation" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="https://facelessuser.github.io/pymdown-extensions" title="PyMdown Extensions Documentation" class="md-header-nav__button md-logo">
+          
+            
+              <i class="md-icon">description</i>
+            
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -158,9 +161,13 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        
+          <i class="md-icon">description</i>
+        
+      
+    </div>
     PyMdown Extensions Documentation
   </label>
   
@@ -763,38 +770,38 @@
 <table><thead><tr><th>Markup</th><th>Example</th></tr></thead><tbody><tr><td>delete</td><td><del class="critic">delete</del></td></tr><tr><td>insert</td><td><ins class="critic">insert</ins></td></tr><tr><td>delete and replace with substitutions</td><td><del class="critic">delete and replace</del><ins class="critic">substitutions</ins></td></tr><tr><td>highlight</td><td><mark class="critic">highlight</mark></td></tr><tr><td>comment</td><td><mark class="critic">text</mark><span class="critic comment">comment</span></td></tr></tbody></table>
 
 <p>Here they are in action:</p>
-<div class="codehilite"><pre><span></span>Here is some {--*incorrect*--} Markdown.  I am adding this{++ here.++}.  Here is some more {--text
- that I am removing--}text.  And here is even more {++text that I 
- am ++}adding.{~~
+<div class="codehilite"><pre><span></span>Here<span class="w"> </span>is<span class="w"> </span>some<span class="w"> </span><span class="s">{--*incorrect*--}</span><span class="w"> </span>Markdown.<span class="w">  </span>I<span class="w"> </span>am<span class="w"> </span>adding<span class="w"> </span>this<span class="s">{++ here.++}</span>.<span class="w">  </span>Here<span class="w"> </span>is<span class="w"> </span>some<span class="w"> </span>more<span class="w"> </span><span class="s">{--text</span>
+<span class="s"> that I am removing--}</span>text.<span class="w">  </span>And<span class="w"> </span>here<span class="w"> </span>is<span class="w"> </span>even<span class="w"> </span>more<span class="w"> </span><span class="s">{++text that I </span>
+<span class="s"> am ++}</span>adding.<span class="s">{~~</span>
 
-~&gt;  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~&gt;
+<span class="s">~&gt;  ~~}</span>Paragraph<span class="w"> </span>was<span class="w"> </span>deleted<span class="w"> </span>and<span class="w"> </span>replaced<span class="w"> </span>with<span class="w"> </span>some<span class="w"> </span>spaces.<span class="s">{~~  ~&gt;</span>
 
-~~}Spaces were removed and a paragraph was added.
+<span class="s">~~}</span>Spaces<span class="w"> </span>were<span class="w"> </span>removed<span class="w"> </span>and<span class="w"> </span>a<span class="w"> </span>paragraph<span class="w"> </span>was<span class="w"> </span>added.
 
-And here is a comment on {==some
- ==text== ==}{&gt;&gt;This works quite well. I just wanted to comment on it.&lt;&lt;}. Substitutions {~~is~&gt;are~~} great!
+And<span class="w"> </span>here<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>comment<span class="w"> </span>on<span class="w"> </span><span class="s">{==some</span>
+<span class="s"> ==text== ==}{&gt;&gt;This works quite well. I just wanted to comment on it.&lt;&lt;}</span>.<span class="w"> </span>Substitutions<span class="w"> </span><span class="s">{~~is~&gt;are~~}</span><span class="w"> </span>great!
 
-General block handling.
+General<span class="w"> </span>block<span class="w"> </span>handling.
 
-{--
+<span class="s">{--</span>
 
-* test
-* test
-* test
-    * test
-* test
+<span class="s">* test</span>
+<span class="s">* test</span>
+<span class="s">* test</span>
+<span class="s">    * test</span>
+<span class="s">* test</span>
 
---}
+<span class="s">--}</span>
 
-{++
+<span class="s">{++</span>
 
-* test
-* test
-* test
-    * test
-* test
+<span class="s">* test</span>
+<span class="s">* test</span>
+<span class="s">* test</span>
+<span class="s">    * test</span>
+<span class="s">* test</span>
 
-++}
+<span class="s">++}</span>
 </pre></div>
 
 <p>Here is some <del class="critic"><em>incorrect</em></del> Markdown.  I am adding this<ins class="critic"> here.</ins>.  Here is some more <del class="critic">text that I am removing</del>text.  And here is even more <ins class="critic">text that I am </ins>adding.<del class="critic break">&nbsp;</del><ins class="critic">  </ins>Paragraph was deleted and replaced with some spaces.<del class="critic">  </del></p>
@@ -828,7 +835,7 @@ General block handling.
 </tr>
 </tbody>
 </table>
-<details class="hint"><summary>Example CSS</summary><p>Here is some example CSS you can use for rendering the visualization.</p><div class="codehilite"><pre><span></span><span class="c">/* Critic Markup */</span>
+<details class="settings"><summary>Example CSS</summary><p>Here is some example CSS you can use for rendering the visualization.</p><div class="codehilite"><pre><span></span><span class="c">/* Critic Markup */</span>
 <span class="p">.</span><span class="nc">markdown-body</span> <span class="p">.</span><span class="nc">critic</span> <span class="p">{</span>
   <span class="k">font-family</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
   <span class="kp">-webkit-</span><span class="k">border-radius</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
@@ -1025,7 +1032,7 @@ General block handling.
       
     </div>
     
-      <script src="../../assets/javascripts/application-3700c4cc12.js"></script>
+      <script src="../../assets/javascripts/application-f3ab9e5ff8.js"></script>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>
